@@ -27,11 +27,7 @@
         // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
       
         
-        
-            
-                   
-            
-            
+
         // 각 주소의 노출 규칙에 따라 주소를 조합한다.
         // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
         var addr = ''; // 주소 변수
@@ -60,7 +56,7 @@
             extraAddr = ' (' + extraAddr + ')';
           }
           
-           messageHandler.postMessage('click~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+//            messageHandler.postMessage('click~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
           // 조합된 참고항목을 해당 필드에 넣는다.
           document.getElementById("sample3_extraAddress").value = extraAddr;
 
@@ -81,9 +77,10 @@
         // 우편번호 찾기 화면이 보이기 이전으로 scroll 위치를 되돌린다.
         document.body.scrollTop = currentScroll;
         
-          Navigator.pop(context, 'hi');
+//           Navigator.pop(context, 'hi');
       },
       // 우편번호 찾기 화면 크기가 조정되었을때 실행할 코드를 작성하는 부분. iframe을 넣은 element의 높이값을 조정한다.
+      
       onresize: function (size) {
         element_wrap.style.height = size.height + 'px';
       },
