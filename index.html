@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>webview</title>
+    </head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <body>
+        <button id="button">버튼</button>
+
+        <script>
+            $(function(){
+                $('#button').click(function(){
+                    alert("클릭");
+                    messageHandler.postMessage('click');
+                    //javascript에선 messagegandler란 애를 선언한적도 없는데 우선 있다고 보고 실행됨
+                    //얘가 flutter가 통신하는 방법
+                    // 1) 앱에 html을 심는 방법
+                    // 2) web
+
+
+                });
+            });
+
+        </script>
+
+    </body>
+</html>
