@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
 <input type="text" id="sample3_extraAddress" placeholder="참고항목"> -->
   
   <div id="wrap" style="border:1px solid;width:300px;height:500px;margin:5px 0;position:relative"></div>
-
+       <button id="button">버튼</button>
   <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
   <script>
@@ -88,27 +88,10 @@
       height: '100%'
     }).embed(element_wrap);
 
-  </script>
-</body>
-
-</html>
- -->
-
-
-
-<html>
-    <head>
-        <title>webview</title>
-    </head>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-
-    <body>
-        <button id="button">버튼</button>
-
-        <script>
-            $(function(){
+    
+    
+        $(function(){
                 $('#button').click(function(){
-                    alert("클릭");
                     messageHandler.postMessage('click');
                     //javascript에선 messagegandler란 애를 선언한적도 없는데 우선 있다고 보고 실행됨
                     //얘가 flutter가 통신하는 방법
@@ -122,8 +105,15 @@
 
                 });
             });
+    
+    
+    
+    
+    
+    
+    
+  </script>
+</body>
 
-        </script>
-
-    </body>
 </html>
+
